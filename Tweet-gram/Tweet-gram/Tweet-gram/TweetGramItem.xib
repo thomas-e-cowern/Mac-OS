@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TweetGramItem" customModule="Tweet_gram" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="FLC-DJ-gd8" id="R1V-9P-HzY"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="410"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FLC-DJ-gd8">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="410"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Yhy-V9-ROM"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="FLC-DJ-gd8" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Lqi-91-t0q"/>
+                <constraint firstAttribute="trailing" secondItem="FLC-DJ-gd8" secondAttribute="trailing" id="Yv0-oA-ofs"/>
+                <constraint firstAttribute="bottom" secondItem="FLC-DJ-gd8" secondAttribute="bottom" id="dP0-n8-jMx"/>
+                <constraint firstItem="FLC-DJ-gd8" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="u4n-vI-vxG"/>
+            </constraints>
+        </customView>
+        <collectionViewItem id="biX-VO-s8u" customClass="TweetGramItem" customModule="Tweet_gram" customModuleProvider="target"/>
+    </objects>
+</document>

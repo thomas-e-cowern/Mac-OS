@@ -1,0 +1,6 @@
+framework module Pods_Tweet_gram {
+  umbrella header "Pods-Tweet-gram-umbrella.h"
+
+  export *
+  module * { export * }
+}

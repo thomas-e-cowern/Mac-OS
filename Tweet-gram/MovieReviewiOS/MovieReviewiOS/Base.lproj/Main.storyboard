@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MovieReviewiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wIY-BK-BhV">
+                                <rect key="frame" x="36" y="40" width="303" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="WjP-FZ-LbU"/>
+                                </connections>
+                            </textField>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4W-b4-bSc">
+                                <rect key="frame" x="36" y="90" width="303" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="pbc-hE-GIO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating - 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGF-7Y-Pk0">
+                                <rect key="frame" x="36" y="238" width="303" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="Eez-Iq-FqQ">
+                                <rect key="frame" x="54" y="279" width="267" height="31"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="KuS-Ny-b0O"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tGF-7Y-Pk0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6AF-9u-XEM"/>
+                            <constraint firstItem="n4W-b4-bSc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="EvJ-ll-daN"/>
+                            <constraint firstItem="Eez-Iq-FqQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="I8j-jQ-IoV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n4W-b4-bSc" secondAttribute="trailing" constant="20" id="L0f-5D-cBs"/>
+                            <constraint firstItem="Eez-Iq-FqQ" firstAttribute="top" secondItem="tGF-7Y-Pk0" secondAttribute="bottom" constant="20" id="M5e-fS-Yo9"/>
+                            <constraint firstItem="wIY-BK-BhV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QWJ-f6-vQ5"/>
+                            <constraint firstItem="tGF-7Y-Pk0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="V6x-KY-UEl"/>
+                            <constraint firstItem="wIY-BK-BhV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="VoX-sJ-pFu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wIY-BK-BhV" secondAttribute="trailing" constant="20" id="Wfw-fM-Ean"/>
+                            <constraint firstItem="wIY-BK-BhV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="X7L-Ry-t54"/>
+                            <constraint firstItem="Eez-Iq-FqQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gk5-Ox-JEO"/>
+                            <constraint firstItem="tGF-7Y-Pk0" firstAttribute="top" secondItem="n4W-b4-bSc" secondAttribute="bottom" constant="20" id="k0b-qY-cfY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tGF-7Y-Pk0" secondAttribute="trailing" constant="20" id="rK7-bd-I6w"/>
+                            <constraint firstItem="n4W-b4-bSc" firstAttribute="top" secondItem="wIY-BK-BhV" secondAttribute="bottom" constant="20" id="rbs-8W-5JI"/>
+                            <constraint firstItem="n4W-b4-bSc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vYG-ek-s7l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Eez-Iq-FqQ" secondAttribute="trailing" constant="40" id="vuc-wt-EV3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelRating" destination="tGF-7Y-Pk0" id="9vZ-Hv-vGR"/>
+                        <outlet property="ratingsSlider" destination="Eez-Iq-FqQ" id="dwU-0h-ER6"/>
+                        <outlet property="reviewText" destination="n4W-b4-bSc" id="vyO-qP-3qO"/>
+                        <outlet property="titleText" destination="wIY-BK-BhV" id="FpM-6N-Oy6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
