@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1962DD76D7A66A8A7DFB3306 /* Pods_Slack_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53F45B02E04B8EAAA7B3ED3 /* Pods_Slack_Clone.framework */; };
+		411F16D41F83DAD000D4E2F8 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F16D31F83DAD000D4E2F8 /* SplitViewController.swift */; };
+		418AE9851F851B8800DE6E92 /* NSAddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AE9831F851B8800DE6E92 /* NSAddChannelVC.swift */; };
+		418F34121F83F41D0075407A /* ChannelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418F34111F83F41D0075407A /* ChannelsVC.swift */; };
+		419F6F201F829D950087292A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419F6F1F1F829D940087292A /* AppDelegate.swift */; };
+		419F6F221F829D950087292A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419F6F211F829D950087292A /* LoginViewController.swift */; };
+		419F6F241F829D950087292A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419F6F231F829D950087292A /* Assets.xcassets */; };
+		419F6F271F829D950087292A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419F6F251F829D950087292A /* Main.storyboard */; };
+		419F6F301F82AA2E0087292A /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419F6F2F1F82AA2E0087292A /* MainWindowController.swift */; };
+		419F6F321F82AA9F0087292A /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419F6F311F82AA9F0087292A /* CreateAccountViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F1ABE573D5E0244D74E7C2A /* Pods-Slack-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slack-Clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Slack-Clone/Pods-Slack-Clone.release.xcconfig"; sourceTree = "<group>"; };
+		411F16D31F83DAD000D4E2F8 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		418AE9831F851B8800DE6E92 /* NSAddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAddChannelVC.swift; sourceTree = "<group>"; };
+		418F34111F83F41D0075407A /* ChannelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsVC.swift; sourceTree = "<group>"; };
+		419F6F1C1F829D940087292A /* Slack-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slack-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		419F6F1F1F829D940087292A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		419F6F211F829D950087292A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		419F6F231F829D950087292A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		419F6F261F829D950087292A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		419F6F281F829D950087292A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		419F6F291F829D950087292A /* Slack_Clone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Slack_Clone.entitlements; sourceTree = "<group>"; };
+		419F6F2F1F82AA2E0087292A /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		419F6F311F82AA9F0087292A /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		735BD27C39AF07B2507806A8 /* Pods-Slack-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slack-Clone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Slack-Clone/Pods-Slack-Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		E53F45B02E04B8EAAA7B3ED3 /* Pods_Slack_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Slack_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		419F6F191F829D940087292A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1962DD76D7A66A8A7DFB3306 /* Pods_Slack_Clone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		419F6F131F829D940087292A = {
+			isa = PBXGroup;
+			children = (
+				419F6F1E1F829D940087292A /* Slack-Clone */,
+				419F6F1D1F829D940087292A /* Products */,
+				DC22FDFB7B4C477C5B85B106 /* Pods */,
+				E8150A96916EFE5B5BC65FD6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		419F6F1D1F829D940087292A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				419F6F1C1F829D940087292A /* Slack-Clone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		419F6F1E1F829D940087292A /* Slack-Clone */ = {
+			isa = PBXGroup;
+			children = (
+				419F6F1F1F829D940087292A /* AppDelegate.swift */,
+				419F6F211F829D950087292A /* LoginViewController.swift */,
+				419F6F2F1F82AA2E0087292A /* MainWindowController.swift */,
+				419F6F311F82AA9F0087292A /* CreateAccountViewController.swift */,
+				411F16D31F83DAD000D4E2F8 /* SplitViewController.swift */,
+				418F34111F83F41D0075407A /* ChannelsVC.swift */,
+				418AE9831F851B8800DE6E92 /* NSAddChannelVC.swift */,
+				419F6F231F829D950087292A /* Assets.xcassets */,
+				419F6F251F829D950087292A /* Main.storyboard */,
+				419F6F281F829D950087292A /* Info.plist */,
+				419F6F291F829D950087292A /* Slack_Clone.entitlements */,
+			);
+			path = "Slack-Clone";
+			sourceTree = "<group>";
+		};
+		DC22FDFB7B4C477C5B85B106 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				735BD27C39AF07B2507806A8 /* Pods-Slack-Clone.debug.xcconfig */,
+				2F1ABE573D5E0244D74E7C2A /* Pods-Slack-Clone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8150A96916EFE5B5BC65FD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E53F45B02E04B8EAAA7B3ED3 /* Pods_Slack_Clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		419F6F1B1F829D940087292A /* Slack-Clone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419F6F2C1F829D950087292A /* Build configuration list for PBXNativeTarget "Slack-Clone" */;
+			buildPhases = (
+				B01193C6ED45B211F5655A02 /* [CP] Check Pods Manifest.lock */,
+				419F6F181F829D940087292A /* Sources */,
+				419F6F191F829D940087292A /* Frameworks */,
+				419F6F1A1F829D940087292A /* Resources */,
+				5E89D1C2307C94E8242BB777 /* [CP] Embed Pods Frameworks */,
+				7B15424C217EA1FA4CCFE8CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Slack-Clone";
+			productName = "Slack-Clone";
+			productReference = 419F6F1C1F829D940087292A /* Slack-Clone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		419F6F141F829D940087292A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = vetDevHouse;
+				TargetAttributes = {
+					419F6F1B1F829D940087292A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 419F6F171F829D940087292A /* Build configuration list for PBXProject "Slack-Clone" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 419F6F131F829D940087292A;
+			productRefGroup = 419F6F1D1F829D940087292A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				419F6F1B1F829D940087292A /* Slack-Clone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		419F6F1A1F829D940087292A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419F6F241F829D950087292A /* Assets.xcassets in Resources */,
+				419F6F271F829D950087292A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E89D1C2307C94E8242BB777 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Slack-Clone/Pods-Slack-Clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B15424C217EA1FA4CCFE8CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Slack-Clone/Pods-Slack-Clone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B01193C6ED45B211F5655A02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		419F6F181F829D940087292A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411F16D41F83DAD000D4E2F8 /* SplitViewController.swift in Sources */,
+				419F6F321F82AA9F0087292A /* CreateAccountViewController.swift in Sources */,
+				418F34121F83F41D0075407A /* ChannelsVC.swift in Sources */,
+				418AE9851F851B8800DE6E92 /* NSAddChannelVC.swift in Sources */,
+				419F6F221F829D950087292A /* LoginViewController.swift in Sources */,
+				419F6F201F829D950087292A /* AppDelegate.swift in Sources */,
+				419F6F301F82AA2E0087292A /* MainWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		419F6F251F829D950087292A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				419F6F261F829D950087292A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		419F6F2A1F829D950087292A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		419F6F2B1F829D950087292A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		419F6F2D1F829D950087292A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 735BD27C39AF07B2507806A8 /* Pods-Slack-Clone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Slack-Clone/Slack_Clone.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 56F54J4H3N;
+				INFOPLIST_FILE = "Slack-Clone/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vetDevHouse.Slack-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		419F6F2E1F829D950087292A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1ABE573D5E0244D74E7C2A /* Pods-Slack-Clone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Slack-Clone/Slack_Clone.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 56F54J4H3N;
+				INFOPLIST_FILE = "Slack-Clone/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vetDevHouse.Slack-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		419F6F171F829D940087292A /* Build configuration list for PBXProject "Slack-Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				419F6F2A1F829D950087292A /* Debug */,
+				419F6F2B1F829D950087292A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419F6F2C1F829D950087292A /* Build configuration list for PBXNativeTarget "Slack-Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				419F6F2D1F829D950087292A /* Debug */,
+				419F6F2E1F829D950087292A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 419F6F141F829D940087292A /* Project object */;
+}

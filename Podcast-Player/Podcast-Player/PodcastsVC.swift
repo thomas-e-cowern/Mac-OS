@@ -21,8 +21,6 @@ class PodcastsVC: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
         super.viewDidLoad()
         // Do view setup here.
         
-        podcastUrlTextField.stringValue = "http://www.espn.com/espnradio/podcast/feeds/itunes/podCast?id=2406595"
-        
         getPodcasts()
     }
     
@@ -36,7 +34,7 @@ class PodcastsVC: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
             do {
                 podcasts = try! context.fetch(fetch)
                 
-                print("Get Podcasts: \(podcasts.count)")
+                //                print("Get Podcasts: \(podcasts.count)")
             } catch {}
             
             DispatchQueue.main.async {
@@ -47,10 +45,10 @@ class PodcastsVC: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
         
     }
     
-    @IBAction func addPodcastClicked(_ sender: Any) {
-        print("AddPodcast Clicked")
+    @IBAction func addPodcastClicked(_ sender: AnyObject) {
+        //        print("AddPodcast Clicked")
         if let url = URL(string: podcastUrlTextField.stringValue) {
-//            print("Url: \(url)")
+            //            print("Url: \(url)")
             URLSession.shared.dataTask(with: url) { (data:Data?, response:URLResponse?, error:Error?) in
                 
                 if error != nil {
@@ -59,11 +57,11 @@ class PodcastsVC: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
                     
                     if data != nil {
                         let podcastURL = self.podcastUrlTextField.stringValue
-                        print("PC text Field 1: \(podcastURL)")
+                        //                        print("PC text Field 1: \(podcastURL)")
                         let parser = Parser()
                         let info = parser.getPodcastMetaData(data: data!)
-                        print("info from Parser: \(parser.getPodcastMetaData(data: data!))")
-                        print("PC text Field 2: \(podcastURL)")
+                        //                        print("info from Parser: \(parser.getPodcastMetaData(data: data!))")
+                        //                        print("PC text Field 2: \(podcastURL)")
                         
                         if !self.podcastExists(rssUrl: podcastURL) {
                             print("New podcast")
@@ -74,12 +72,16 @@ class PodcastsVC: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
                                 podcast.rssUrl = self.podcastUrlTextField.stringValue
                                 podcast.imageUrl = info.imageUrl
                                 podcast.title = info.title
-                                print("Podcast: \(podcast)")
+                                print("New Podcast: \(podcast)")
                                 
                                 
                                 (NSApplication.shared().delegate as? AppDelegate)?.saveAction(nil)
                                 
                                 self.getPodcasts()
+                                
+                                DispatchQueue.main.async {
+                                    self.podcastUrlTextField.stringValue = ""
+                                }
                             }
                         } else {
                             print("Podcast already exists")
@@ -89,20 +91,22 @@ class PodcastsVC: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
                 
                 }.resume()
             
-            podcastUrlTextField.stringValue = ""
+            
         }
+        //        podcastUrlTextField.stringValue = ""
     }
+    
     
     func podcastExists(rssUrl: String) -> Bool {
         print("PE rssUrl: \(rssUrl)")
         if let context = (NSApplication.shared().delegate as? AppDelegate)?.persistentContainer.viewContext {
-//            print("context: \(context.)")
+            //            print("context: \(context.)")
             let fetch = Podcast.fetchRequest() as NSFetchRequest<Podcast>
             fetch.predicate = NSPredicate(format: "rssUrl == %@", rssUrl)
             print("Fetch: \(fetch)")
             do {
                 let matchingPodcasts = try! context.fetch(fetch)
-//                print("MP Title: \(matchingPodcasts)")
+                //                print("MP Title: \(matchingPodcasts)")
                 print("Matching podcasts: \(matchingPodcasts.count)")
                 if matchingPodcasts.count >= 1 {
                     print("matches")
